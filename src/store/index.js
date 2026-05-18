@@ -4,6 +4,8 @@ import salesReducer from './slices/salesSlice'
 import productionReducer from './slices/productionSlice'
 import inventoryReducer from './slices/inventorySlice'
 import dashboardReducer from './slices/dashboardSlice'
+import usageReducer from './slices/usageSlice'
+import paymentReducer from './slices/paymentSlice'
 
 export const store = configureStore({
   reducer: {
@@ -12,5 +14,7 @@ export const store = configureStore({
     production: productionReducer,
     inventory: inventoryReducer,
     dashboard: dashboardReducer,
+    usage: usageReducer,
+    payments: paymentReducer,
   },
 })

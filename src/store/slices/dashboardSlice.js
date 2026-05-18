@@ -2,29 +2,35 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   metrics: {
-    totalUsers: 1245,
-    monthlyRevenue: 84200,
-    activeOrders: 142,
-    criticalIssues: 3,
+    totalRevenue: 1250000,
+    productionVolume: 45000,
+    pendingCollections: 85000,
+    lowStockAlerts: 4,
   },
   revenueData: [
-    { name: 'Jan', revenue: 4000, target: 2400 },
-    { name: 'Feb', revenue: 3000, target: 1398 },
-    { name: 'Mar', revenue: 2000, target: 9800 },
-    { name: 'Apr', revenue: 2780, target: 3908 },
-    { name: 'May', revenue: 1890, target: 4800 },
-    { name: 'Jun', revenue: 2390, target: 3800 },
+    { name: 'Mon', revenue: 40000, target: 45000 },
+    { name: 'Tue', revenue: 30000, target: 45000 },
+    { name: 'Wed', revenue: 55000, target: 45000 },
+    { name: 'Thu', revenue: 27800, target: 45000 },
+    { name: 'Fri', revenue: 48900, target: 45000 },
+    { name: 'Sat', revenue: 63900, target: 45000 },
   ],
   productionData: [
-    { name: 'Motor', value: 400 },
-    { name: 'Panel', value: 300 },
-    { name: 'Sensor', value: 300 },
-    { name: 'Valve', value: 200 },
+    { name: 'Poultry Feed A', value: 4000 },
+    { name: 'Cattle Feed B', value: 3000 },
+    { name: 'Aqua Feed C', value: 3000 },
+    { name: 'Swine Feed D', value: 2000 },
   ],
-  users: [
-    { id: 'U-1', name: 'Alice Smith', role: 'Admin', status: 'Active' },
-    { id: 'U-2', name: 'Bob Jones', role: 'Sales', status: 'Active' },
-    { id: 'U-3', name: 'Charlie Day', role: 'Manufacture', status: 'Inactive' },
+  usageData: [
+    { name: 'DORB', value: 12000 },
+    { name: 'Maize DDGS', value: 8000 },
+    { name: 'Rice Bran', value: 5000 },
+    { name: 'Molasses', value: 3000 },
+  ],
+  retailers: [
+    { id: 'R-1', name: 'Agri Supplies Co.', role: 'Distributor', status: 'Active' },
+    { id: 'R-2', name: 'Farm Direct', role: 'Retailer', status: 'Active' },
+    { id: 'R-3', name: 'Valley Feeds', role: 'Wholesaler', status: 'Inactive' },
   ]
 }
 
